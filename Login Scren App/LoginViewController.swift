@@ -7,13 +7,13 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        passwordTextField.delegate = self
     }
     
     func alertWindow(Title title: String, Message message: String) {
@@ -58,6 +58,15 @@ class LoginViewController: UIViewController {
         
         guard let destinationViewController = segue.destination as? WelcomeViewController else { return }
         destinationViewController.userName = userNameTextField.text
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if userNameTextField.text == "User" && passwordTextField.text == "Password" {
+            performSegue(withIdentifier: "toWelcomeSegue", sender: nil)
+        } else {
+            alertWindow(Title: "Invalid Login or Password", Message: "Please, enter correct login and password!")
+        }
+        return true
     }
 }
 

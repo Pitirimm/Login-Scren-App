@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="lfs-8f-MAx">
-                                <rect key="frame" x="57" y="144" width="300" height="254"/>
+                                <rect key="frame" x="57" y="94" width="300" height="254"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="kgu-ZU-7DK">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="178"/>
@@ -73,7 +73,7 @@
                         <constraints>
                             <constraint firstItem="lfs-8f-MAx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="4Wz-xz-WU9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lfs-8f-MAx" secondAttribute="trailing" constant="57" id="7B8-07-rYH"/>
-                            <constraint firstItem="lfs-8f-MAx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="agw-cA-Q1b"/>
+                            <constraint firstItem="lfs-8f-MAx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="agw-cA-Q1b"/>
                         </constraints>
                     </view>
                     <connections>
