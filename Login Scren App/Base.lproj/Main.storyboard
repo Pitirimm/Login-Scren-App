@@ -12,7 +12,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Login_Scren_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Login_Scren_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -26,7 +26,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Apk-q5-Rdh">
                                                 <rect key="frame" x="0.0" y="0.0" width="300" height="42"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BgN-qt-V45">
                                                 <rect key="frame" x="0.0" y="68" width="300" height="42"/>
@@ -42,7 +42,6 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="loginTappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Faj-Jt-uKP"/>
-                                                    <segue destination="h8h-9v-GoR" kind="show" id="MKF-j9-Mtr"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -80,6 +79,7 @@
                     <connections>
                         <outlet property="passwordTextField" destination="BgN-qt-V45" id="DV7-ZT-4R0"/>
                         <outlet property="userNameTextField" destination="Apk-q5-Rdh" id="O3X-9g-B6Y"/>
+                        <segue destination="h8h-9v-GoR" kind="show" identifier="toWelcomeSegue" id="c0V-IG-cru"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -134,9 +134,11 @@
                     <navigationItem key="navigationItem" id="Jtu-z8-ECI"/>
                     <connections>
                         <outlet property="welcomeTextField" destination="Bqg-Wk-gii" id="3CU-xs-RqU"/>
+                        <segue destination="O0s-w2-ihT" kind="unwind" identifier="unwindSegue" unwindAction="unwindSegueToLoginScreenWithSegue:" id="Upx-HX-SMV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IE6-dl-s8Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="O0s-w2-ihT" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="826" y="78"/>
         </scene>

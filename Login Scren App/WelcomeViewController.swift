@@ -21,6 +21,7 @@ class WelcomeViewController: UIViewController {
     }
     
     @IBAction func logoutTappedButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "unwindSegue", sender: nil)
     }
     
 }
