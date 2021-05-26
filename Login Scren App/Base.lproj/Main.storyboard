@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="lfs-8f-MAx">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="lfs-8f-MAx">
                                 <rect key="frame" x="57" y="144" width="300" height="254"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="kgu-ZU-7DK">
@@ -25,9 +25,6 @@
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Apk-q5-Rdh">
                                                 <rect key="frame" x="0.0" y="0.0" width="300" height="42"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="300" id="Lmp-N4-pZ7"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -44,14 +41,14 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="8xN-3R-9QQ">
-                                        <rect key="frame" x="0.0" y="224" width="296" height="30"/>
+                                        <rect key="frame" x="0.0" y="224" width="300" height="30"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAe-Ob-YAO">
-                                                <rect key="frame" x="0.0" y="0.0" width="133" height="30"/>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAe-Ob-YAO">
+                                                <rect key="frame" x="0.0" y="0.0" width="137" height="30"/>
                                                 <state key="normal" title="Forgot User Name?"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uic-kv-JbE">
-                                                <rect key="frame" x="173" y="0.0" width="123" height="30"/>
+                                                <rect key="frame" x="177" y="0.0" width="123" height="30"/>
                                                 <state key="normal" title="Forgot Password?"/>
                                             </button>
                                         </subviews>
@@ -62,9 +59,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="lfs-8f-MAx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="TUu-MJ-DfO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lfs-8f-MAx" secondAttribute="trailing" constant="57" id="jMB-Hl-LuV"/>
-                            <constraint firstItem="lfs-8f-MAx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="n9i-m0-cnD"/>
+                            <constraint firstItem="lfs-8f-MAx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="4Wz-xz-WU9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lfs-8f-MAx" secondAttribute="trailing" constant="57" id="7B8-07-rYH"/>
+                            <constraint firstItem="lfs-8f-MAx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="agw-cA-Q1b"/>
                         </constraints>
                     </view>
                 </viewController>
