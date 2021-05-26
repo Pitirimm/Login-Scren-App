@@ -14,6 +14,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         passwordTextField.delegate = self
+        
     }
     
     func alertWindow(Title title: String, Message message: String) {
